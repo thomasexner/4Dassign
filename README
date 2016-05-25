@@ -1,0 +1,24 @@
+README file for assignment
+
+The program was developed by Matthias Trautwein in the group of Thomas Exner at the University of Tuebingen for the automated assignment of NMR chemical shifts in proteins based on a known 3D structure and 4D [1H,15N]-HSQC-NOESY-[1H,15N]-HSQC spectra.
+
+It can be compiled with the following command: 
+g++ -O2 -Wall -o assignment assignment.cc 
+
+Usage: assignment [-h][-p <file>][-n <file>][-f <file][-l <file>][-m <int>][-t <int>][-s <float>]
+    [-h]          : This helpscreen
+    [-p <file>]   : Pdb-file (default: "1D3Z.pdb")
+    [-n <file>]   : NOESY peaklist (default: "NOESY.peaks")
+    [-l <file>]   : Log-file (default: "logfile")
+    [-c <file>]   : Chemical shifts file (optional parameter: no default value)
+	 [-f <file>]   : Fix chemical shifts (default: no default value) 
+    [-s <float>]  : Safety distance added to restraints (default: 0.2)
+    [-m <int>]    : Maximum number of Cycles (default: 100) 
+    [-t <int>]    : Number of threads used by openmp (default: 4)
+    [-r <bool>]   : Call referencing routine, 0 = FALSE, 1 = TRUE (default: 0)
+    [-d <bool>]   : Call identify doublepeaks routine, 0 = FALSE, 1 = TRUE (default: 0)
+
+
+All default values are set for the Ubiquitin example, so the user can start the program without any flags. 
+In the current version the -t and -m are included but have no effect (parallelization and maximum number of cycles not supported yet). These flags are provided for further developments.
+

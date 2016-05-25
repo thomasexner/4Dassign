@@ -1,0 +1,4 @@
+# Example file for fixing some NOESY-signals to one amid-group
+# Format: entry residue residude-name 15N 1H
+1 47 GLY 102.58 8.10 
+2 51 GLU 123.16 8.35
