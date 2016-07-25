@@ -1,6 +1,6 @@
 README file for assignment
 
-The program was developed by Matthias Trautwein in the group of Thomas Exner at the University of Tuebingen for the automated assignment of NMR chemical shifts in proteins based on a known 3D structure and 4D [1H,15N]-HSQC-NOESY-[1H,15N]-HSQC spectra.
+The program was developed by Matthias Trautwein in the group of Thomas Exner at the University of Tuebingen for the automated assignment of NMR chemical shifts in proteins based on a known 3D structure and 4D [1H,15N]-HSQC-NOESY-[1H,15N]-HSQC spectra. More information is available in manual.pdf.
 
 It can be compiled with the following command: 
 g++ -O2 -Wall -o assignment assignment.cc 
